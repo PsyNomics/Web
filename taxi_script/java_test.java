@@ -56,6 +56,13 @@ public class java_test {
                     System.out.println(data);
                 }
 
+            Class.forName("org.mysql.jdbc.Driver"); //그냥 외울것
+            String url = "jdbc:mysql://localhost:3306/java";
+            String id = "root";
+            String pw = "1234";
+
+            conn = DriverManager.getConnection(url, id, pw); // Connection
+
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
